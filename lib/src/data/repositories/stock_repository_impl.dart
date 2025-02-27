@@ -47,10 +47,10 @@ class StockRepositoryImpl implements StockRepository{
       final eResp = e.response;
       Log.e(_tag, "${eResp?.statusCode}, ${e.error}", stackTrace: e.stackTrace);
       // Try retrieve data from Local
-      final localItems = await localDataSource.itemDao.getStocks();
-      if (localItems.isNotEmpty) {
-        Log.d(_tag, "Returning cached Stock from Local STORE, ${localItems.length}");
-        return localItems;
+      final localStocks = await localDataSource.itemDao.getStocks();
+      if (localStocks.isNotEmpty) {
+        Log.d(_tag, "Returning cached Stock from Local STORE, ${localStocks.length}");
+        return localStocks;
       }
       throw ApiException(eResp?.data['message'] ?? '${e.message}', eResp?.statusCode);
     }
