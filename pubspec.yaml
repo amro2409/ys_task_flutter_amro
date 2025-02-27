@@ -1,0 +1,144 @@
+name: stock_market_tracker
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+ # my dependencies
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+  # State Management
+  flutter_bloc: ^8.1.3
+  bloc: ^8.1.2
+  equatable: ^2.0.5
+  # Networking & API
+  dio: ^5.8.0+1
+  retrofit: ^4.4.2
+  dio_cookie_manager: ^3.2.0
+  logger: ^1.4.0
+  # JSON Parsing
+  json_annotation: ^4.8.1
+  freezed_annotation: ^2.4.1
+  # Local Database (SQLite/Hive)
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  # Dependency Injection
+  get_it: ^7.7.0
+  # Routing Screens
+  go_router: ^12.0.0 # أو auto_route: ^7.8.0
+  # GPS Location
+  geolocator: ^11.0.0
+  # Push Notifications
+  flutter_local_notifications: ^15.1.1
+  # Printing & PDF
+  printing: ^5.11.0
+  pdf: ^3.10.2
+  # File Upload & Attachments
+  image_picker: ^1.0.4
+  file_picker: ^6.1.2
+  open_filex: ^4.0.0
+  # UI Enhancements
+  flutter_svg: ^2.0.7
+  google_fonts: ^5.1.0
+  cached_network_image: ^3.3.0
+  syncfusion_flutter_datagrid: ^23.1.40
+  timeago: ^3.4.0 # لعرض التواريخ بشكل نسبي (مثال: منذ 5 دقائق)
+  permission_handler: ^11.0.1 # لطلب صلاحيات النظام (GPS، الكاميرا، إلخ)
+  shared_preferences: ^2.2.1 #
+  lottie: ^1.4.1
+  injectable: ^2.1.0 #todo: new add
+  crypto: ^3.0.1 #todo: new add
+  flutter_secure_storage: ^9.0.0 #todo: new add
+  flutter_widget_from_html: ^0.10.5 # todo: new add
+  timelines_plus: ^1.0.2 # todo: new add
+  connectivity_plus: ^4.0.2 # todo: new add
+  url_launcher: ^6.2.1 # todo: new add
+  flutter_downloader: ^1.11.4 # todo: new add
+  device_info: ^2.0.0 # todo: new add
+  # device_preview: ^1.1.0
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  # Code Generation
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+  freezed: ^2.4.5 # لإنشاء Data Classes
+  retrofit_generator: ^8.2.1 # 4.2.0 # لإنشاء كود Retrofit
+  injectable_generator: ^2.1.0
+  hive_generator: ^2.0.0
+
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.2 # لإنشاء Mocks
+  bloc_test: ^9.1.4 # لاختبار الـ BLoC
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+flutter_icons:
+  android: false
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/onx_logo.png" # android/app/src/main/ic_launcher-playstore.png
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/
+    - assets/icons/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
